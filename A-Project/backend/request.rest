@@ -1,0 +1,31 @@
+GET http://localhost:5000/users
+
+###
+GET http://localhost:5000/users/1
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Ahmad Febry",
+    "nim": "1320076",
+    "jurusan": "Sistem Informasi Industri Otomotif",
+    "email": "ahmadfebry69@gmail.com",
+    "gender": "Laki-Laki"
+}
+
+###
+PATCH  http://localhost:5000/users/1
+Content-Type: application/json
+
+{
+    "name": "Ahmad Febry Pamungkas",
+    "nim": "1320076",
+    "jurusan": "Sistem Informasi Industri Otomotif",
+    "email": "ahmadfebryp69@gmail.com",
+    "gender": "Laki-Laki"
+}
+
+###
+DELETE   http://localhost:5000/users/2
